@@ -29,7 +29,7 @@ st.title("🏏IPL StatZone - Analytics Dashboard (2008-2024)")
 st.markdown("""
 The **Indian Premier League (IPL)** is a professional Twenty20 cricket league in India, known for its thrilling matches, star players, and unforgettable moments.  
 
-Compare **players**, **teams**, **venues**, and **seasons** with rich visuals🔥.  
+Use the Sidebar and Compare **players**, **teams**, **venues**, and **seasons** with rich visuals🔥.  
 """)
 
 
