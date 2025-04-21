@@ -34,12 +34,16 @@ Use the Sidebar and Compare **players**, **teams**, **venues**, and **seasons** 
 
 
 
-st.sidebar.header("Comparison Filters")
+if st.button("☰ Menu"):
+    st.session_state.show_sidebar = not st.session_state.get("show_sidebar", False)
 
-comparison_type = st.sidebar.radio(
-    "Select Comparison Type:",
-    ("Player", "Team", "Venue", "Season")
-)
+if st.session_state.get("show_sidebar", False):
+    with st.sidebar:
+        st.header("Comparison Filters")
+        comparison_type = st.radio(
+            "Select Comparison Type:",
+            ("Player", "Team", "Venue", "Season")
+        )
 
 selection1 = None
 selection2 = None
